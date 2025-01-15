@@ -5,7 +5,7 @@ import { SliceComponentProps, SliceZone } from "@prismicio/react"
 import { createClient } from "@/prismicio"
 import { components } from "@/slices"
 
-export default async function Page() {
+export default async function HomePage() {
 	const client = createClient()
 	const page = await client.getSingle("homepage")
 	const slices = bundleTextAndImageSlices(page.data.slices)
