@@ -125,7 +125,7 @@ export function Skateboard({
 				metalness: 0.8,
 				roughness: 0.25
 			}),
-		[boltColor]
+		[truckColor, metalNormal]
 	)
 
 	const deckMaterial = useMemo(
@@ -134,7 +134,7 @@ export function Skateboard({
 				map: deckTexture,
 				roughness: 0.1
 			}),
-		[boltColor]
+		[deckTexture]
 	)
 
 	const wheelMaterial = useMemo(
@@ -143,7 +143,7 @@ export function Skateboard({
 				map: wheelTexture,
 				roughness: 0.35
 			}),
-		[boltColor]
+		[wheelTexture]
 	)
 
 	const addToWheelRefs = (ref: THREE.Object3D | null) => {
