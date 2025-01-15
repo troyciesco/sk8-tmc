@@ -1,7 +1,7 @@
-export function page() {
-  return (
-    <div>
-      <div>page</div>
-    </div>
-  )
+export default function Page() {
+	return (
+		<div>
+			<div>Build Page (coming soon)</div>
+		</div>
+	)
 }
