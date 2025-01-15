@@ -33,10 +33,17 @@ export function Skater({ skater, index }: Props) {
 				<PrismicNextImage
 					field={skater.data.photo_foreground}
 					width={500}
-					alt=""
 					className="transform transition-transform duration-1000 ease-in-out group-hover:scale-110"
 				/>
+				<div className="relative h-48 w-full place-self-end bg-gradient-to-t from-black via-transparent to-transparent"></div>
+				<h3 className="relative grid place-self-end justify-self-start p-2 font-sans text-brand-gray ~text-2xl/3xl">
+					<span className="mb-[-0.3em] block">{skater.data.first_name}</span>
+					<span className="block">{skater.data.last_name}</span>
+				</h3>
 			</div>
+			<ButtonLink field={skater.data.customizer_link} size="sm">
+				{skater.data.customizer_link.text}
+			</ButtonLink>
 		</div>
 	)
 }

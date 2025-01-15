@@ -26,13 +26,13 @@ export type HeroProps = SliceComponentProps<Content.HeroSlice>
 /**
  * Component for "Hero" Slices.
  */
-const Hero = ({ slice }: HeroProps): JSX.Element => {
-	// const deckTextureURL =
-	// 	asImageSrc(slice.primary.skateboard_deck_texture) || DEFAULT_DECK_TEXTURE
-	// const wheelTextureURL =
-	// 	asImageSrc(slice.primary.skateboard_wheel_texture) || DEFAULT_WHEEL_TEXTURE
-	// const truckColor = slice.primary.skateboard_truck_color || DEFAULT_TRUCK_COLOR
-	// const boltColor = slice.primary.skateboard_bolt_color || DEFAULT_BOLT_COLOR
+const Hero = ({ slice }: HeroProps) => {
+	const deckTextureURL =
+		asImageSrc(slice.primary.skateboard_deck_texture) || DEFAULT_DECK_TEXTURE
+	const wheelTextureURL =
+		asImageSrc(slice.primary.skateboard_wheel_texture) || DEFAULT_WHEEL_TEXTURE
+	const truckColor = slice.primary.skateboard_truck_color || DEFAULT_TRUCK_COLOR
+	const boltColor = slice.primary.skateboard_bolt_color || DEFAULT_BOLT_COLOR
 
 	return (
 		<Bounded
@@ -60,6 +60,12 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 					</ButtonLink>
 				</div>
 			</div>
+			<InteractiveSkateboard
+				deckTextureURL={deckTextureURL}
+				wheelTextureURL={wheelTextureURL}
+				truckColor={truckColor}
+				boltColor={boltColor}
+			/>
 		</Bounded>
 	)
 }
