@@ -1,0 +1,40 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"body": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Officia tempor ipsum anim incididunt aliqua duis irure elit proident."
+						}
+					}
+				]
+			},
+			"button": {
+				"key": "36ca6a7f-bb0b-4c89-ba61-563584b4b7a0",
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "https://prismic.io",
+					"text": "fireplace"
+				}
+			},
+			"heading": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "heading1",
+						"content": {
+							"text": "Memory"
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
